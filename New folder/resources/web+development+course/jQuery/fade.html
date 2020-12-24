@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style>
+    #div1 {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<body>
+
+
+    <div id="div1"></div>
+    <!-- <button>Fade toggel</button>
+    <button id="fd">Fade out</button> -->
+
+    <button id="Fdt">Fade to</button>
+    <script>
+        // $("button").click(function() {
+
+        //     $("#div1").fadeToggle(3000);
+        // })
+        $("button").click(function() {
+
+            $("#div1").fadeTo("slow", 0.5);
+        })
+
+        // $("#fd").click(function() {
+
+        //     $("#div1").fadeOut();
+        // })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <!-- <p id="hello">5</p> -->
+    <p id="sometext"></p>
+    <!-- <button onclick="changeText()">change</button> -->
+
+    <input id="first" placeholder="enter number">
+    <input id="second" placeholder="enter second number">
+    <button onclick="add()">add</button>
+    <script>
+        function add() {
+            var a, b, c;
+            a = Number(document.getElementById("first").value);
+            b = Number(document.getElementById("second").value);
+            c = a + b;
+            document.getElementById("sometext").innerHTML = c;
+        }
+
+        function changeText() {
+            // var a;
+            a = Number(document.getElementById("hello").nodeValue);
+
+            //a = 5 + 5;
+            //var existingText = document.getElementById("hello").innerHTML;
+            // document.getElementById("hello").innerHTML = "the value is " + a;
+
+        }
+    </script>
+</body>
+
+</html>

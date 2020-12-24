@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <button>set the color property of all paragraphs</button>
+    <p>This is a paragraph</p>
+
+    <p>this is second <i class="fa fa-paragraph" aria-hidden="true"></i></p>
+
+    <script>
+        $("button").click(function() {
+
+            $("p").css({
+
+                "background-color": "red",
+                "color": "blue"
+
+            }); // p { color: red;}
+        })
+    </script>
+</body>
+
+</html>

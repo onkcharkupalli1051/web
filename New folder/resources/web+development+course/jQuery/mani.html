@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulate HTML</title>
+</head>
+
+<body>
+    <p id="para1">This is a paragraph</p>
+    <p id="para2">This is another paragraph</p>
+
+    <p><input type="text" id="test" value="Mickey Mouse"></p>
+
+
+    <button id="btn1">Set Text</button>
+
+    <button id="btn2">Set HTML</button>
+
+    <button id="btn3">Set value</button>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $("#btn1").click(function() {
+
+                $("#para1").text("Hello saif!");
+            });
+
+            $("#btn2").click(function() {
+
+                $("#para2").html("<b>Hello saif!<b>");
+            });
+            $("#btn3").click(function() {
+
+                $("#test").val("Clubhouse")
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .someText {
+        font-size: 200%;
+        background-color: black;
+        color: white;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="text" class="someText">this is some text</p>
+    <button id="myBtn">change</button>
+
+    <div onmouseover=mOver(this) id="bluediv" onmouseout=mOut(this) style="background-color: blue;width: 120px; height: 20px;padding: 40px;">Move over me</div>
+    <!-- <input type="text" name="firstname" id="fname" onchange="myFunction()"> -->
+    <script>
+        function mOver(obj) {
+            obj.style.backgroundColor = "blue";
+            //  console.log(obj);
+            obj.innerHTML = "Thank you";
+        }
+        var element = document.getElementById("bluediv");
+        element.addEventListener("click", function() {
+
+            alert("thanks for clicking me ");
+
+        })
+
+        function mOut(objs) {
+
+            objs.innerHTML = "you did an mouse out event";
+            objs.style.backgroundColor = "red";
+
+        }
+
+        function myFunction() {
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+        // document.write(Date());
+        document.getElementById("myBtn ").onclick = changecolor;
+
+        function changecolor() {
+
+            //document.getElementsByClassName("someText ")[0].innerHTML = "some value ";
+            document.getElementById("text ").classList.toggle("someText ");
+            //document.getElementById("text ").style.fontSize = "200% ";
+            // document.getElementById("text ").style.color = "blue ";
+
+        }
+    </script>
+</body>
+
+</html>

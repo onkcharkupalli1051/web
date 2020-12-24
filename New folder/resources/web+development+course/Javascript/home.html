@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <p id="text">Hi students! how are you ?</p>
+    <button id="myBtn">Change text</button>
+    <script>
+        var number = 7;
+        var ischange = false;
+        document.getElementById("myBtn").onclick = function() {
+            //alert("this is working thanks for clicking");
+            //if statement
+            if (number > 10) {
+
+                document.getElementById("text").innerHTML = "the value is greater than 10";
+                //block of code will be executed
+            } else if (number === 7) {
+                document.getElementById("text").innerHTML = " the value is equal to 7";
+            } else {
+                document.getElementById("text").innerHTML = "the value is unknown";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

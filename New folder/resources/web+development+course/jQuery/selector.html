@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <p>List 1</p>
+
+    <ul>
+
+        <li>chalks</li>
+        <li>chocolate</li>
+        <li>tea</li>
+    </ul>
+    <p>List 2</p>
+
+    <ul>
+
+        <li>tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+    </ul>
+    <p>Hello world!</p>
+
+
+    Name: <input type="text" name="fullname" id=""><br> Email: <input type="text" name="email" id="">
+    <br>
+    <button>Hide paragraph</button>
+
+
+
+    <script>
+        $(document).ready(function() {
+
+            // $("p").click(function() {
+
+            //     $(this).hide();
+            // })
+
+
+            // $("p").mousedown(function() {
+
+            // })
+
+            // $("input").focus(function() {
+            //     $(this).css("background-color", "green");
+            // })
+            // $("input").blur(function() {
+            //     $(this).css("background-color", "white");
+            // })
+
+            $("p").on({
+
+                mouseenter: function() {
+
+                    $(this).css("background-color", "lightgray");
+                },
+
+                mouseleave: function() {
+                    $(this).css("background-color", "lighblue");
+                },
+                click: function() {
+                    $(this).css("background-color", "yellow")
+                }
+            })
+
+
+
+
+        })
+    </script>
+</body>
+
+</html>
