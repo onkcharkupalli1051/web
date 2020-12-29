@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Onclick text</p>
+
+    <button id="b1">Change Text</button>
+    <script>
+        var ischanged = false;
+
+        document.getElementById("b1").onclick = function()
+        {
+            if(ischanged == false){
+                document.getElementById("p1").innerHTML = "New Text";
+            }
+            else
+            {
+                document.getElementById("p1").innerHTML = "Will not be changed";
+            }
+            
+        }
+    </script>
+</body>
+</html>

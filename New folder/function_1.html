@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions 1</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        function myfunction(p1)
+        {
+            return p1**2;
+        }
+        document.getElementById("demo").innerHTML = myfunction(4,3);
+    </script>
+
+    <p id="demo2">MUltiply : </p>
+
+    <script>
+        function func2(ele)
+        {
+            return ele*2;
+        }
+        document.getElementById("demo2").innerHTML = func2(5);
+    </script>
+
+    <h1 onmouseover="this.style.backgroundColor='blue'">Multiplication : </h1>
+    <p id="multiplyid"></p>
+    <script>
+        function mul(a,b)
+        {
+            return a*b;
+        }
+        var x = mul(100,2);
+        document.getElementById("multiplyid").innerHTML = x;
+    </script>
+
+    <div onmouseover="this.style.backgroundColor='red'">Temperature Conversion</div>
+    <p id="tempid"></p>
+    <p id="fahrid"></p>
+    <script>
+        function tocel(fahr)
+        {
+            return ((5/9)*(fahr-32));
+        }
+        function tofahr(cel)
+        {
+            return (((9/5)*cel)+32);
+        }
+        
+        document.getElementById("tempid").innerHTML = "Temperature in celsius : " + tocel(92);
+
+        document.getElementById("fahrid").innerHTML = "Temperature in Fahrenheit : " + tofahr(32);
+    </script>
+</body>
+</html>
