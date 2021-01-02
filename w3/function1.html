@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Functions</title>
+</head>
+<body>
+    <p>Calling a function, and returning the function</p>
+
+    <p id="demo"></p>
+
+    <script>
+        function myfunction(p1)
+        {
+            return p1**2;
+        }
+
+        document.getElementById("demo").innerHTML = "Square : " + myfunction(4);
+    </script>
+
+    <p> Multiplication Demo</p>
+
+    <p id="demo2"></p>
+
+    <script>
+        function myMUl(p1,p2)
+        {
+            return p1*p2;
+        }
+
+        var p1 = 100;
+        var p2 = 23;
+        document.getElementById("demo2").innerHTML = "Multiplication of " + p1 + p2 + ": " + myMUl(p1,p2);
+    </script>
+</body>
+</html>

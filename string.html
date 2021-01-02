@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<p id='demo'></p>
+<p id='demo2'></p>
+<p id='demo3'></p>
+<p id='demo4'></p>
+<p id='demo5'></p>
+<p id='demo5'></p>
+<p id='demo6'></p>
+<p id='demo7'></p>
+<p id='demo8'></p>
+<p id='demo9'></p>
+<p id='demo10'></p>
+<p id='demo11'></p>
+<p id='demo12'></p>
+<p id='demo13'></p>
+<p id="demo14"></p>
+<p></p>
+
+
+<body>
+    <script>
+        var kartik = "sattu nigga, eats less!, farts less!";
+        var sln = kartik.length;
+        document.getElementById("demo").innerHTML= "String Length : " + sln;
+        
+        var sindex = kartik.indexOf("eats");
+        document.getElementById('demo2').innerHTML="Print : " + sindex; 
+
+        var lindex = kartik.lastIndexOf('less');
+        document.getElementById('demo3').innerHTML = "Last index : " + lindex;
+
+        var seindex = kartik.search("nigga");
+        document.getElementById("demo4").innerHTML= "Search : "+ seindex;
+
+        /*
+        slice(start,end)
+        substring(start,end)
+        substr(start,Length)
+        */
+
+        var sl = kartik.slice(10,15);
+        document.getElementById("demo5").innerHTML = "Sliced String : "+ sl;
+
+        var su = kartik.substring(10,15);
+        document.getElementById('demo6').innerHTML = "Substring : " + su;
+
+        var sub = kartik.substr(10,5);
+        document.getElementById('demo7').innerHTML = "Substr : "+ sub;
+
+        var rep = kartik.replace("less","very less");
+        document.getElementById("demo8").innerHTML = "Replaced String : " + rep;
+
+        document.getElementById('demo9').innerHTML = "Original String : " + kartik;
+
+        var nrep = kartik.replace(/SATTU/i, "nattu");
+        document.getElementById('demo10').innerHTML = "Flag replaced string : "  + nrep;
+
+        var repall = kartik.replace(/sattu/g, "nattu");
+        document.getElementById("demo11").innerHTML = repall;
+    
+        var ns = "hello";
+        document.getElementById("demo12").innerHTML = ns.toUpperCase();
+
+        document.getElementById("demo13").innerHTML = ns.toLowerCase();
+    
+        document.getElementById("demo14").innerHTML = kartik.concat(" ",ns);
+    </script>
+</body>
+</html>
