@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>NUmber methods</h1>
+    <p id="demo"></p>
+    <p id="d2"></p>
+    <script>
+        //tostring() returns string
+
+        //toExponential() returns a string with number rounded and written using exponential notation
+        var x = 9.656;
+        document.getElementById("demo").innerHTML = 
+        x.toExponential() + " " + x.toExponential(1)+" "+ x.toExponential(2) + "  " + x.toExponential(4);
+
+        document.getElementById("d2").innerHTML = "To fixed returns number with fixed decimal points : " +"<br>"+ x.toFixed(0) + " " +  x.toFixed(2);
+    </script>
+</body>
+</html>

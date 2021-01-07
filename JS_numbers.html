@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS numbers</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        var x = 4;
+        var txt = "";
+        while(x != Infinity)
+        {
+            x = x*x;
+            txt = txt + x + "<br>";
+        }
+        document.getElementById("demo").innerHTML = txt;
+    </script>
+
+    <p id="demo2"></p>
+    <script>
+        var y = 32;
+        document.getElementById("demo2").innerHTML = 
+        y + "<br>" + "Decimal : " + y.toString(10) + "<br>Hexa : " + y.toString(16) + "<br>BInary : " + y.toString(2) + "<br>Octal : " + y.toString(8);
+    </script>
+</body>
+</html>
