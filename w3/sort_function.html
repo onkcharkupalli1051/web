@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <button onclick="myfunction()">Try It.</button>
+    <p id="demo"></p>
+
+    <script>
+        var pts = [40,100,50,60,80];
+        document.getElementById("demo").innerHTML = pts;
+
+        function myfunction()
+        {
+            pts.sort(function(a,b)
+            {
+                return a-b;
+            });
+            document.getElementById("demo").innerHTML=pts;
+        }
+    </script>
+    
+</body>
+</html>

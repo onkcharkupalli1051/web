@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Finding descending order of Array</h1>
+    
+
+    <p id="demo"></p>
+    <button onclick="myfunction()">Click Here to print.</button>
+    <script>
+        varpoints = [99,55,44,11,66,77,100,22];
+        document.getElementById("demo").innerHTML = points;
+
+        function myfunction()
+        {
+            points.sort(function(a,b){return b-a;});
+            document.getElementById("demo").innerHTML = points;
+        }
+        document.getElementById("demo").innerHTML = points;
+    </script>
+</body>
+</html>
