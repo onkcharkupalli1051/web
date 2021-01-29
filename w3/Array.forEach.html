@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array ForEach</title>
+</head>
+<body>
+    <h1>Calls a function for each array element</h1>
+
+    <p id="demo"></p>
+
+    <script>
+        var txt = "";
+        var nos = [45,89,78,2];
+
+        nos.forEach(myfunc);
+        document.getElementById("demo").innerHTML = txt;
+
+        function myfunc(value,index,array)
+        {
+            txt = txt + value + "<br>";
+        }
+    </script>
+</body>
+</html>

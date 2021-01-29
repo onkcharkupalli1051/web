@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Array.filter() creates new array with all array elements that passes a test</p>
+    <p id="demo"> </p>
+
+    <script>
+        var n1 = [84,65,54,122,389];
+        var n2 = n1.filter(myfunction);
+
+        document.getElementById("demo").innerHTML = n2;
+
+        function myfunction(value,index,array)
+        {
+            return value > 100;
+        }
+
+    </script>
+</body>
+</html>

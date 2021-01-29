@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Map</title>
+</head>
+<body>
+    <p>Creates new array by performing a function on each array element</p>
+
+    <p id="demo"></p>
+
+    <script>
+        var nos1 = [45,89,56,78,12,65,45,87];
+        var nos2 = nos1.map(myfunction);
+
+        document.getElementById("demo").innerHTML = nos2;
+
+        function myfunction(value,index,array)
+        {
+            return value*2;
+        }
+
+        document.write(nos1);
+    </script>
+</body>
+</html>

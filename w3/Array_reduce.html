@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Reduce</title>
+</head>
+<body>
+    <p>Array.reduce() method runs a function on each array element to produce a single value</p>
+
+    <script>
+        var n = [54,4,9,15];
+        var sum = n.reduce(myfunction);
+
+        document.write("Sum : "+sum);
+
+        function myfunction(total,value,index,array)
+        {
+            return total+value;
+        }
+    </script>
+
+    <p>The reduce can accept intitial value to sum</p>
+    <script>
+        var n = [54,87,65,12,32,45,87];
+        var sum = n.reduce(myfunction,1000);
+
+        function myfunction(total,value,index,array)
+        {
+            return total+value;
+        }
+    document.write(sum);
+    </script>
+</body>
+</html>
