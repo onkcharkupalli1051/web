@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function guessNumber()
+        {
+            const random = Math.floor(Math.random()*10)+1;
+
+            let number = parseInt(prompt("Guess number from 1 to 10: "));
+            while(number != random)
+            {
+                number = parseInt(prompt("Guess : "));
+            }
+            if(number == random)
+            {
+                document.write("Great Job!");
+            }
+
+        }
+
+        guessNumber();
+
+        function random(arr)
+        {
+            const randomIndex = Math.floor(Math.random()*arr.length);
+            const item = arr[randomIndex];
+            return item;
+        }
+
+        const arr = [11,55,44,77,88,66,33];
+        const result = random(arr);
+        
+        document.write("<br>"+result);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+</head>
+
+<body>
+	<p id="demo"></p>
+    <script>
+        var rows = prompt("Enter rows : ");
+        var col = prompt("Enter column : ");
+
+        if(rows == "" || rows == null)
+            rows = 10;
+
+        if(col = "" || col == null)
+        {
+            col = 10;
+        }
+
+        createTable(rows,col);
+
+        function createTable(rows,col)
+        {
+            var j = 1;
+            var output = "<table border='1' width='500' cellspacing='0' cellpadding='5'>";
+            
+            for(i=1;i<=rows;i++)
+            {
+                output = output + "<tr>";
+                while(j <= col)
+                {
+                    output = output + "<td>" + i*j + "</td>";
+                    j = j + 1;
+                }
+                output = output + "</tr>";
+                j = 1;
+            }
+            output = output + "</table>";
+            document.write(output);
+        }
+    </script>
+</body>
+</html>
