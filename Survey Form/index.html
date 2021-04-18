@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <h1 id="title">Favourite Programming Language Survey Form</h1>
+    
+    <p id="description">
+        Please fill all the details below for Survey.
+    </p>
+
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">Name : </label>
+        <input type="text" id="name" placeholder="Name"><br>
+
+        <label for="email" id="email-label">Email : </label>
+        <input type="email" id="email" placeholder="Email"><br>
+
+        <label for="number" id="number-label">Number : </label>
+        <input type="number" id="number" min="10" max="13" placeholder="Phone"><br><br>
+        
+        <label for="language">Choose your favourite Language : </label>
+        <select name="language" id="language">
+            <option value="JavaScript">JavaScript</option>
+            <option value="CSS">CSS</option>
+            <option value="HTML">HTML</option>
+        </select>
+
+        <!-- 13 -->
+        <p>Select your field/Worktype : </p>
+        <input type="radio" id="frontend" name="worktype" value="frontend">
+        <label for="frontend">Frontend</label><br>
+        <input type="radio" id="backend" name="worktype" value="backend">
+        <label for="backend">Backend</label><br>
+        <input type="radio" name="worktype" id="fullstack" value="fullstack">
+        <label for="fullstack">FullStack</label>
+    
+        <!-- 14 -->
+        <p>Select what you would like to learn : </p>
+        <input type="checkbox" id="p1" name="p1" value="nodejs">
+        <label for="p1">NodeJS</label><br>
+        <input type="checkbox" id="p2" name="p2" value="django">
+        <label for="p2">Django</label><br>
+    
+        <!-- 15 -->
+        <label for="comments">Comments : </label>
+        <br>
+        <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+        <br><br>
+        <!-- 16 -->
+        <button id="submit">Submit</button>
+    </form>
+</body>
+</html>

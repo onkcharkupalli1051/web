@@ -1,0 +1,34 @@
+#header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left:0;
+    background-color: #cc0000;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    padding: 1em;
+}
+
+h1{
+    top: 40;
+    left: 100;
+}
+#header-img{
+    width:10%;
+    height:auto;
+}
+
+#nav-bar{
+
+}
+.nav-link{
+
+}
+
+#video{
+
+}
+
+#submit{
+
+}

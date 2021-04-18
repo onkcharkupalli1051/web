@@ -1,0 +1,52 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+ body {
+    margin: auto;
+  }
+  
+  #main{
+    background:lightgoldenrodyellow;
+  }
+
+  #title{
+    background:darkred;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: white;
+    text-align: center;
+  }
+
+  #img-div{
+    
+    padding: 5px;
+  }
+
+  #image{
+    /* height: 50%;
+    width: 50%;
+    max-width: ; */
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  #image-caption{
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+  }
+
+  #tribute-info{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+  }
+  
+  #tribute-link{
+    color: darkblue;
+  }
+

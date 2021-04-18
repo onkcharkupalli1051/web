@@ -1,0 +1,15 @@
+body{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+#title{
+    color: coral;
+}
+
+#description{
+    color: crimson;
+}
+
+
