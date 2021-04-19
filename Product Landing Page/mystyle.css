@@ -10,16 +10,16 @@
 }
 
 h1{
-    top: 40;
-    left: 100;
+    
+    
 }
 #header-img{
-    width:10%;
+    width:10%; 
     height:auto;
 }
 
 #nav-bar{
-
+    
 }
 .nav-link{
 
@@ -31,4 +31,11 @@ h1{
 
 #submit{
 
+}
+
+@media(max-width: 500px)
+{
+    body{
+        flex-wrap: wrap;
+    }
 }
