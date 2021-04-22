@@ -1,7 +1,14 @@
 body{
-    max-width: 900px;
+    max-width: 500px;
     margin: auto;
     text-align: center;
+    background-color: aliceblue;
+}
+
+form{
+    background-color: lightcoral;
+    padding: 5rem 5rem;
+    border-radius: 25px;
 }
 
 #title{

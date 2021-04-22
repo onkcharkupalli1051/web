@@ -1,25 +1,32 @@
 #header{
     position:fixed;
+  top: 0px;
     width: 100%;
-    top: 0;
-    left:0;
+  height: 20px;
+    top: 0px;
+    left:0px;
     background-color: #cc0000;
     color: white;
     font-family: 'Exo 2', sans-serif;
     padding: 1em;
+  display: flex;
+  justify-content: space-between;
 }
 
-h1{
-    
-    
+@media(max-width: 500px)
+{
+    body{
+        flex-wrap: wrap;
+    }
 }
+
 #header-img{
-    width:10%; 
-    height:auto;
+    width:10%;
+    height:10%;
 }
 
 #nav-bar{
-    
+
 }
 .nav-link{
 
@@ -31,11 +38,4 @@ h1{
 
 #submit{
 
-}
-
-@media(max-width: 500px)
-{
-    body{
-        flex-wrap: wrap;
-    }
 }
